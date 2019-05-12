@@ -1,0 +1,231 @@
+@import "../front/less/mixins.less"; 
+
+a {
+	outline: none !important;
+}
+
+/** *****************************************************************************************************************************************
+		ICONS FOR CUSTOM POST TYPES
+***************************************************************************************************************************************** **/
+
+#adminmenu #menu-posts-pricing_table div.wp-menu-image:before {
+	font-family: FontAwesome !important;
+	content: "\f155";
+}
+#adminmenu #menu-posts-portfolio div.wp-menu-image:before {
+	content: "\f322";
+}
+#adminmenu #menu-posts-partners div.wp-menu-image:before {
+	content: "\f307";
+}
+#adminmenu #menu-posts-team div.wp-menu-image:before {
+	content: "\f338";
+}
+#adminmenu #menu-posts-benefits div.wp-menu-image:before {
+	content: "\f313";
+}
+#adminmenu #menu-posts-testimonials div.wp-menu-image:before {
+	font-family: FontAwesome !important;
+	content: "\f0e6";
+}
+#adminmenu #toplevel_page_theme_settings div.wp-menu-image:before {
+	content: "\f309";
+}
+#adminmenu #menu-posts-mega_menu div.wp-menu-image:before {
+	content: "\f212";
+}
+
+/** *****************************************************************************************************************************************
+		THEME CUSTOMIZER SCREEN
+***************************************************************************************************************************************** **/
+#wproto-settings-form {
+	padding-bottom: 20px;
+	position: relative;
+	
+	a {
+		box-shadow: none !important;
+	}
+	
+}
+.wproto-settings-box .wproto-image-picker-input {
+	width: 68% !important;
+}
+.wproto-settings-box {
+	background: #fff;
+	max-width: 780px;
+	padding: 0 20px 10px 20px; 
+	border: 1px solid #e5e5e5;
+	.box-sizing();
+	.box-shadow( 0 1px 1px rgba(0, 0, 0, 0.04) );
+}
+#wproto-settings-screen div.updated {
+	max-width: 780px;
+	.box-sizing();
+}
+.wproto-settings-box.save-box {
+	position: fixed;
+	bottom:40px;
+	width: 780px;
+	padding-top: 10px !important;
+	text-align: right;
+	margin-bottom: 0;
+}
+@media only screen and (max-width:900px) { 
+	#wproto-settings-form {
+		padding-bottom: 0 !important;	
+	}
+	.save-box {
+		width: auto;
+		max-width: 780px;
+		position: static;
+		bottom: 0;
+	}
+}
+.wproto-settings-box hr {
+	height: 1px !important;
+	background: #e5e5e5 !important;
+	color: #e5e5e5 !important;
+	border: 0;
+	margin-right: -20px;
+	margin-left: -20px;
+}
+.wproto-settings-box .error {
+	margin: 15px 0 15px !important;
+}
+.wproto-settings-box input[type=text],
+.wproto-settings-box input[type=password],
+.wproto-settings-box textarea {
+	width: 70%;
+}
+.wproto-settings-box input[type=number], .wproto-metabox-inside-bg input[type=number], .wproto-slider-ui-value {
+	width: 75px !important; 
+}
+h3.title {
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 10px;
+	padding: 13px 10px;
+	margin: 0 -20px 20px -20px;
+}
+h4.header {
+	font-size: 1.13em;
+}
+h2.nav-tab-wrapper, .wproto-settings-box {
+	margin-bottom: 20px;
+}
+.wproto-settings-box {
+	margin-bottom: 35px;
+}
+table.wproto-form-table th {
+	font-size: 13px;
+	font-weight: 600;
+	padding: 15px 10px 20px 0;
+}
+table.wproto-form-table th, table.wproto-form-table td {
+	padding: 15px 10px 12px 15px;
+}
+table.wproto-form-table td {
+	padding: 15px 15px 12px 15px;
+}
+table.wproto-form-table tr:nth-child( 2n-1 ) {
+	background-color: #fcfcfc;
+}
+div.field {
+	line-height: 24px;
+	margin: 5px 0 1em 0;
+}
+.infodiv {
+	background-color: #fff;
+	border-left: 4px solid #7ad03a;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	margin: 15px 0 15px;
+	padding: 1px 12px;
+}
+
+.wproto-input {
+	dt, dd {
+		display: block;
+	}
+	dt {
+		font-size: 13px;
+		color: #555;
+		padding-bottom: 4px;
+	}
+	dd {
+		padding-left: 0;
+		margin-left: 0;
+		color: #999;
+		font-size: 13px;
+	}
+}
+
+.wproto-input .half {
+	.box-sizing();
+	width: 50%;
+	float: left;
+	margin: 0 0 10px 0;
+	padding: 0 10px 0 0;
+	select {
+		width: 100%;
+	}
+}
+
+.wproto-input .full {
+	padding: 0 10px 0 0;
+	margin: 0 0 10px 0;
+}
+
+.wproto-input .half:nth-child( 2n ) {
+	padding-right: 0;
+}
+
+.wproto-input .half.left {
+	padding-right: 10px !important;
+}
+
+.wproto-input .full {
+	clear: both;
+	width: 100%;
+	select {
+		width: 100%;
+	}
+}
+
+/** *****************************************************************************************************************************************
+		UNYSON CUSTOMIZATION
+***************************************************************************************************************************************** **/
+
+.wproto-image-auto-width .thumb {
+	width: auto !important;
+	height: auto !important;
+}
+
+.Unicum-App-Button {
+	.img-apple( #fff );
+}
+.Unicum-App-Button-Google {
+	.img-android( #fff );
+}
+.Unicum-App-Button:hover {
+	.img-apple( #b1d750 );
+}
+.Unicum-App-Button-Google:hover {
+	.img-android( #b1d750 );
+}
+.Unicum-App-Button, .Unicum-App-Button-Google {
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: 30px 20px;
+}
+
+@media screen and (max-width: 767px) {
+	
+}
+
+.fw-table-cell-content .fw-cell-option-wrapper {
+	margin-bottom: 15px;
+}
+
+.fw-option-type-table .fw-table-cell-worksheet:not(.desc-col) .switch-row, .fw-option-type-table .fw-table-cell-worksheet:not(.desc-col) .button-row {
+	text-align: left !important;
+}

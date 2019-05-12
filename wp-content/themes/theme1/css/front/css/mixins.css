@@ -1,0 +1,11 @@
+/* line 149, mixins.less */
+.grad-orange {
+  background: #e5493a;
+  background: linear-gradient(225deg, #e5493a, #ee6f2c, #f7941e);
+  background-size: 600% 600%;
+  -webkit-animation: AnimateGradient 4s ease infinite;
+  -moz-animation: AnimateGradient 4s ease infinite;
+  -o-animation: AnimateGradient 4s ease infinite;
+  animation: AnimateGradient 4s ease infinite;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5493a', endColorstr='#f7941e', GradientType=1);
+}

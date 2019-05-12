@@ -1,0 +1,22 @@
+<wpml-config>
+	<admin-texts>
+		<!-- fw_theme_settings_options:YOURTHEME (this is the field in the database)-->
+		<key name="fw_theme_settings_options:default">
+
+			<key name="page_404_content"/>
+
+	    <key name="display_bottom_bar">
+	    	<key name="yes">
+	    		<key name="bottom_bar_content"/>
+	    	</key>
+	    </key>
+
+		</key>
+	</admin-texts>
+	<custom-types>
+		<custom-type translate="1">fw-portfolio</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">fw-portfolio-category</taxonomy>
+	</taxonomies>
+</wpml-config>

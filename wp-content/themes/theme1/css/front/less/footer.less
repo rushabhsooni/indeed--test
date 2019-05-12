@@ -1,0 +1,131 @@
+/**
+	Footer styles
+**/
+#footer {
+	background-color: @footer_bg;
+	color: @footer_text_color;
+	
+	.bgImage( @footer_bg_image_background_image );
+	.bgImageRepeat( @footer_bg_image_background_repeat );
+	.bgImagePosition( @footer_bg_image_background_position );
+	.bgImageSize( @footer_bg_image_background_size );
+	.bgImageFixed( @footer_bg_image_background_fixed );
+	
+	a {
+		color: @footer_link_color;
+	}
+	a:hover {
+		color: @color_accent_green;
+	}
+	.input-wrapper::after {
+		background-color: @footer_border_alt_color;
+	}
+	.input-wrapper.hovered::after {
+		background-color: @footer_border_alt_color;
+	}
+	::-webkit-input-placeholder { color: @footer_placeholder_color; }
+	::-moz-placeholder          { color: @footer_placeholder_color; }
+	:-moz-placeholder           { color: @footer_placeholder_color; }
+	:-ms-input-placeholder      { color: @footer_placeholder_color; }
+
+	.widget-title {
+		color: @footer_headers_color;
+	}
+	
+	select {
+		background-color: @footer_bg;
+		color: @footer_placeholder_color;
+	}
+	
+	input[type=text], input[type=search], input[type=email], input[type=number], textarea {
+		color: @footer_placeholder_color;
+	}
+	
+	input[type=text]:focus, input[type=search]:focus, input[type=email]:focus, input[type=number]:focus, textarea:focus {
+		color: @color_accent_green;
+	}
+
+}
+/**
+	Parallax footer styles
+**/
+.parallax-footer #footer {
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	z-index: 1;
+  -webkit-transition-property: all;
+     -moz-transition-property: all;
+      transition-property: all;
+
+  -webkit-transition-duration: 0.4s;
+     -moz-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+     -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+      transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+@media screen and (max-width: 992px) {
+	.parallax-footer #footer {
+		position: relative;
+		z-index: 1;
+	}
+}
+#footer-parallax-height {
+	position: relative;
+}
+/**
+	Footer widgets area
+**/
+#footer-widgets {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+/**
+	Bottom bar
+**/
+#bottom-bar {
+	padding: 50px 0;
+	text-align: center;
+	.decrease-font-size( @primary_font_font_size, 0.2);
+	background-color: @footer_bottom_bar_bg;
+	
+	.bgImage( @bottom_bar_bg_image_background_image );
+	.bgImageRepeat( @bottom_bar_bg_image_background_repeat );
+	.bgImagePosition( @bottom_bar_bg_image_background_position );
+	.bgImageSize( @bottom_bar_bg_image_background_size );
+	.bgImageFixed( @bottom_bar_bg_image_background_fixed );
+	
+	p {
+		margin-bottom: 0;
+	}
+}
+/**
+	Footer logo
+**/
+.footer-logo {
+	display: inline-block;
+	margin-bottom: 30px;
+}
+/**
+	GoTop link
+**/
+#scrollUp {
+  bottom: 50px;
+  right: 50px;
+  background-color: transparent;
+  text-indent: -5555em;
+  width: 40px;
+  height: 61px;
+  .img-arrow-top( @color_accent_green );
+  background-size: 40px 60px;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 992px) {
+	#scrollUp {
+		display: none !important;
+	}
+}
